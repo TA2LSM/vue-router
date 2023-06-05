@@ -3,13 +3,14 @@
     <!-- Because of router links vue will intercept requests and process
          them faster by itself. There will be no requests to the server. -->
     <router-link to="/">Home</router-link> |
-
+    <router-link :to="{name: 'Jobs'}">Jobs</router-link> |
+    
     <!-- hard coded -->
     <!-- <router-link to="/about">About</router-link> -->
-
     <!-- dynamically added. Refers the names of the routes in the router/index.js -->
-    <router-link :to="{name: 'about'}">About</router-link>
+    <router-link :to="{name: 'About'}">About</router-link>
   </nav>
+
   <!-- Every component that requested will be rendered in here below -->
   <router-view/>
 </template>
